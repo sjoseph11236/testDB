@@ -1,5 +1,5 @@
 
-DROP TABLE students, courses, studentCourses;-- 
+DROP TABLE students, courses, studentCourses;
 
 CREATE TABLE students (
 id INTEGER PRIMARY KEY,
