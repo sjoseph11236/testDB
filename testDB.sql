@@ -14,7 +14,7 @@ id INTEGER PRIMARY KEY,
 title VARCHAR(100)
 );
 
-CREATE TABLE studentCourses(
+CREATE TABLE enrollment(
  id INTEGER PRIMARY KEY AUTO_INCREMENT,
  studentId INTEGER, 
  courseId INTEGER,
@@ -34,15 +34,15 @@ INSERT INTO courses VALUES
 (2,"English"),
 (3, "Science"); 
 
--- INSERT studentCourses
-INSERT INTO studentCourses VALUES
+-- INSERT enrollment
+INSERT INTO enrollment VALUES
 (1, 1, 1),
 (2, 1, 2),
 (3, 2,3),
 (4, 3, 3);
 
 
-SELECT * FROM studentCourses;
+SELECT * FROM enrollment;
 SELECT firstName, lastName FROM students;
 SELECT firstName, lastName FROM students LIMIT 2; 
 SELECT firstName, lastName FROM students WHERE age >= 18; 
